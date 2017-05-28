@@ -1,0 +1,1038 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+body {
+    font-family: "Trebuchet MS";
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    color: white;
+    text-decoration: none
+}
+a:visited {
+    color: white;
+    text-decoration: none
+}
+
+a:active {
+    color: white;
+    text-decoration: none
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Trebuchet MS", sans-serif;
+
+}
+
+.wrapper {
+    background: url(../img/body-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkblue;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2b4d7b;
+}
+
+.logo img {
+    height: 52px;
+    width: 50px;
+}
+
+.brand-name {
+    color: white;
+    text-transform: uppercase;
+    margin-left: -250px;
+}
+
+.authorization {
+    color: white;
+}
+
+.sign__in,
+.sign__up,
+.icon__sign__in {
+    color: white;
+}
+
+.line {
+    background-color: #2b4d7b;
+    height: 5px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.square {
+    background-color: white;
+    height: 5px;
+    width: 7.4px;
+    margin-left: 156px;
+}
+
+.about {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255, .7);
+
+}
+
+.awrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.awrap h1 {
+    margin-top: 150px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 55px;
+    color: #2b4d7b;
+}
+.awrap h4 {
+    margin-top: 50px;
+    color: #2b4d7b;
+}
+
+.about-photo {
+    margin: 100px 100px 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.images {
+    margin-bottom: 30px;
+    width: 140px;
+    margin-left: 30px;
+    height: 140px;
+    background-color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.1);
+}
+
+.post {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2b4d7b;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+
+
+/* Кнопки */
+
+.btn-buy-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b4d7b;
+    text-align: center;
+    color: white;
+    margin: 0 60px 0 60px;
+    width: 220px;
+    height: 40px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+.btn-buy-left:hover,
+.btn-buy-left:focus,
+.btn-buy-left.focus,
+.btn-buy-left:active,
+.btn-buy-left.active,
+.btn-buy-right:hover,
+.btn-buy-right:focus,
+.btn-buy-right.focus,
+.btn-buy-right:active,
+.btn-buy-right.active {
+    color: white;
+    background-color: LightSteelBlue;
+    border-color: #f1b602;
+}
+
+
+.btn-buy-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b4d7b;
+    text-align: center;
+    color: white;
+    margin: 0 60px 0 60px;
+    width: 220px;
+    height: 40px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+
+/* Кнопки */
+
+.description {
+    border: none;
+    text-align: center;
+}
+
+.post h1 {
+    font-size: 30px;
+    margin: 80px 100px 0px 100px;
+}
+
+.post h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.sl_slide {
+    display: flex;
+    flex-direction: row;
+}
+
+.blueback {
+    background: #2b4d7b;
+    width: 300px;
+    height: 60px;
+    z-index: 0;
+    margin-top: 50px;
+
+}
+
+.sl_slide img {
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+
+.if-sell-buy {
+    margin-left: 0px;
+}
+
+.list {
+    background-color: #e5eaf2;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+
+}
+
+.main-list {
+    margin: 40px 100px 10px 100px;
+}
+.if-sell-buy{
+    font-weight:bold;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.new-line {
+    background-color: gray;
+    height: 130px;
+    width: 1px;
+    margin-right: 20px;
+    margin-left: 50px;
+    opacity: .3;
+}
+
+.blablabla {
+    width: 450px;
+}
+
+.thanks {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255, .5);
+    color: #2b4d7b;
+}
+
+.header-thanks {
+    margin: 40px;
+    text-align: center;
+}
+
+.slider2 {
+    margin: 0px 160px 20px 160px;
+    width: 740px;
+}
+
+.fixer {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-slider2 {
+    z-index: 1;
+    padding-left: 30px;
+}
+
+.help-descr {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 20px -90px;
+    background-color: #2b4d7b;
+    color: white;
+    font-size: 20px;
+    height: 250px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.help-descr p {
+    margin-left: 90px;
+}
+
+.who {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+
+}
+
+.who-wrap-items {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+}
+
+.who-items {
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.1);
+}
+
+
+.descr-who {
+    width: 200px;
+    text-align: center;
+}
+
+.socail-sposob {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socail-sposob h1 {
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    color: #2b4d7b;
+    text-align: center;
+    background: rgba(255,255,255, .8);
+
+}
+
+.social-wrap {
+    height: 100px;
+}
+
+.fa-custom {
+    width: 60px;
+    font-size: 40px;
+}
+
+.fa-twitter-square {
+    color: #1dcaff;
+}
+
+.fa-vk {
+    color: #507299;
+}
+
+.fa-odnoklassniki-square {
+    color: orange;
+}
+
+.fa-facebook-official {
+    color: #3b5998;
+}
+
+.line2 {
+    background-color: #2b4d7b;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2b4d7b;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+}
+
+.telephone {
+    color: white;
+}
+
+/* Кастомизация слайдер */
+.slick-prev:before {
+    font-size: 70px;
+    color: transparent;
+    left: -70px;
+    top: -50px;
+    background: transparent;
+    position: absolute;
+
+    border: 60px solid transparent;
+    border-right: 30px solid #2b4d7b;
+    display: block;
+    width: 0px;
+    height: 0px;
+}
+
+.slick-next:before {
+    font-size: 70px;
+    color: transparent;
+    left: 0px;
+    top: -50px;
+    background: transparent;
+    position: absolute;
+
+    border: 60px solid transparent;
+    border-left: 30px solid #2b4d7b;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+
+/* Супер копка */
+
+
+/* iPhone 5  */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    .container {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #2b4d7b;
+    }
+
+    .brand-name {
+        font-size: 9px;
+        margin-left: -40px;
+    }
+    .authorization {
+        font-size:10px;
+    }
+    .square {
+        margin-left: 48px;
+    }
+
+    .about {
+        height: auto;
+    }
+    .about-photo {
+        margin: 50px 30px 60px 0px;
+    }
+
+    .awrap h1 {
+        margin: 50px 20px 20px 20px;
+        font-size: 20px;
+    }
+    .post {
+        height: auto;
+    }
+
+
+    .post h1 {
+        font-size: 15px;
+        margin: 60px 0px 0px 0px;
+    }
+    .post h3 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .slider {
+        margin-top: 30px;
+        width: 240px;
+        margin-bottom: 50px;
+    }
+
+    .list {
+        height: auto;
+    }
+    .main-list {
+        font-size: 10px;
+        margin: 70px 20px 0px 20px;
+    }
+    .if-sell-buy {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .thanks {
+        height: auto;
+    }
+    .header-thanks {
+        font-size: 20px;
+    }
+
+    .sl_slide img {
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .blueback {
+        height: 20px;
+        margin-top: 22px;
+    }
+
+    .slider2 {
+        width: 240px;
+        height: 130px;
+        margin: 0 0px 0px 0px;
+    }
+
+    .fixer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 180px;
+    }
+    .help-descr {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        z-index: 0;
+        height: auto;
+
+    }
+
+    .help-descr p {
+        margin-bottom: 50px;
+        margin-left: 10px;
+        font-size: 7px;
+    }
+
+    .photo-slider2 img {
+        z-index: 1;
+        margin-left: -25px;
+        width: 130px;
+        height: 130px;
+    }
+    .who-items,
+    .who-wrap-items {
+        margin-bottom: 20px;
+    }
+    .social {
+        height: auto;
+    }
+
+    .socail-sposob{
+        height: 180px;
+    }
+    .socail-sposob h1 {
+        margin: 0px 30px 0 30px;
+        font-size: 15px;
+        height: 10px;
+    }
+    .footer {
+        font-size: 10px;
+    }
+
+    /* кнопки */
+
+    .add {
+        margin-top: 35px;
+        flex-direction: row;
+    }
+
+    .btn-buy-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b4d7b;
+        text-align: center;
+        color: white;
+        margin: 0 20px 30px 20px;
+        width: 150px;
+        height: 30px;
+        outline: none;
+    }
+
+
+    .btn-buy-left,.btn-buy-right span {
+        font-size: 12px;
+    }
+
+    .btn-buy-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b4d7b;
+        text-align: center;
+        color: white;
+        margin: 0 20px 0px 20px;
+        width: 150px;
+        height: 30px;
+        outline: none;
+    }
+
+    /* Кастомизация слайдер */
+    .slick-prev:before {
+        font-size: 0px;
+        color: transparent;
+        left: -10px;
+        top: 0px;
+        background: transparent;
+        position: absolute;
+
+        border: 15px solid transparent;
+        border-right: 15px solid #2b4d7b;
+        display: block;
+        width: 0px;
+        height: 0px;
+    }
+
+    .slick-next:before {
+        font-size: 0px;
+        color: transparent;
+        left: 0px;
+        top: 0px;
+        background: transparent;
+        position: absolute;
+
+        border: 15px solid transparent;
+        border-left: 15px solid #2b4d7b;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+}
+
+@media only screen and (min-device-width : 732px) and (max-device-width : 412px) {
+
+    .container {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+}
+
+/* iPhone 6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .container {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider {
+        width: 300px;
+        height: 70px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .sl_slide img {
+        width: 70px;
+        height: 70px;
+        margin-top: 0px;
+    }
+
+    .blueback {
+        height: 20px;
+        margin-top: 70px;
+    }
+
+}
+
+/* iPhone 6 Plus */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+
+
+}
+
+/* Retina iPad in portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .container {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #2b4d7b;
+    }
+
+    .brand-name {
+        font-size: 10px;
+        margin-left: -250px;
+    }
+    .authorization {
+        font-size:10px;
+    }
+    .square {
+        margin-left: 156px;
+    }
+
+    .about {
+        height: auto;
+    }
+    .about-photo {
+        margin: 50px 30px 60px 0px;
+    }
+
+    .awrap h1 {
+        margin: 50px 20px 20px 20px;
+        font-size: 20px;
+    }
+    .post {
+        height: 330px;
+    }
+
+    .post h1 {
+        font-size: 20px;
+        margin: 110px 0px 0px 0px;
+    }
+    .post h3 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .slider {
+        margin-top: 30px;
+        width: 260px
+    }
+    .list {
+        height: auto;
+    }
+    .main-list {
+        font-size: 10px;
+        margin: 70px 20px 0px 20px;
+    }
+    .if-sell-buy {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .thanks {
+        height: auto;
+    }
+    .header-thanks {
+        font-size: 20px;
+    }
+    .slider {
+        margin-top: -50px;
+        width: 540px;
+        height: 200px;
+    }
+
+    .sl_slide img {
+        width: 100px;
+        height: 100px;
+        margin-top: 45px;
+    }
+
+    .blueback {
+        height: 20px;
+        margin-top: 90px;
+    }
+
+    .slider2 {
+        width: 540px;
+        margin: 0 0px 0px 0px;
+    }
+
+    .fixer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .help-descr {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        z-index: 0;
+    }
+
+    .help-descr p {
+        margin-bottom: 0px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .photo-slider2 img {
+        z-index: 10;
+        width: 200px;
+        height: 200px;
+        margin-left: -80px;
+    }
+
+    .who {
+        display: flex;
+        flex-direction: row;
+        width: 760px;
+
+    }
+    .who-items,
+    .who-wrap-items {
+        margin-bottom: 20px;
+    }
+
+    .who-wrap-items {
+        width: 250px;
+    }
+
+    .who-items {
+        width: 100px;
+        height: 100px;
+    }
+
+    .descr-who {
+        width: 150px;
+        text-align: center;
+    }
+
+    .social {
+        height: 280px;
+    }
+    .socail-sposob h1 {
+        margin: 20px 30px 0 30px;
+        font-size: 15px;
+    }
+    .footer {
+        font-size: 10px;
+    }
+
+    /* кнопки */
+
+    .add {
+        margin-top: 15px;
+        flex-direction: row;
+    }
+
+    .btn-buy-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b4d7b;
+        text-align: center;
+        color: white;
+        margin: 0 50px 60px 20px;
+        width: 150px;
+        height: 30px;
+        outline: none;
+    }
+
+    .btn-buy-left,.btn-buy-right span {
+        font-size: 12px;
+    }
+
+    .btn-buy-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b4d7b;
+        text-align: center;
+        color: white;
+        margin: 0 0px 60px 50px;
+        width: 150px;
+        height: 30px;
+        outline: none;
+    }
+
+    /* Кастомизация слайдер */
+    .slick-prev:before {
+        font-size: 70px;
+        color: transparent;
+        left: -40px;
+        top: -20px;
+        background: transparent;
+        position: absolute;
+
+        border: 30px solid transparent;
+        border-right: 30px solid #2b4d7b;
+        display: block;
+        width: 0px;
+        height: 0px;
+    }
+
+    .slick-next:before {
+        font-size: 70px;
+        color: transparent;
+        left: 0px;
+        top: -20px;
+        background: transparent;
+        position: absolute;
+
+        border: 30px solid transparent;
+        border-left: 30px solid #2b4d7b;
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+}
